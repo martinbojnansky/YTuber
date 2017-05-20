@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="27920MartinBojnansk.YTuber" Publisher="CN=8806B7A2-DCFA-41C1-B10F-FC977C23274C" Version="2.0.0.2" ProcessorArchitecture="x64" />
+  <Identity Name="27920MartinBojnansk.YTuber" Publisher="CN=8806B7A2-DCFA-41C1-B10F-FC977C23274C" Version="2.0.0.3" ProcessorArchitecture="x64" />
   <Properties>
     <DisplayName>YTuber</DisplayName>
     <PublisherDisplayName>Martin Bojnanský</PublisherDisplayName>

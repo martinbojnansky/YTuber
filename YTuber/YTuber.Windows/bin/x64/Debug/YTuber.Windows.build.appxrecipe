@@ -10,19 +10,19 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>27920MartinBojnansk.YTuber</PackageIdentityName>
     <PackageIdentityPublisher>CN=8806B7A2-DCFA-41C1-B10F-FC977C23274C</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Projects\YTuber\YTuber\YTuber.Windows\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\AppxManifest.xml">
+    <AppXManifest Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\YTuber.Windows.exe">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\YTuber.Windows.exe">
       <PackagePath>YTuber.Windows.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.AdMediatorWindows81\1.0\References\CommonConfiguration\Neutral\Microsoft.AdMediator.Core.dll">
@@ -34,13 +34,13 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.AdMediatorWindows81\1.0\References\CommonConfiguration\x64\Microsoft.AdMediator.Windows81.MicrosoftAdvertising.dll">
       <PackagePath>Microsoft.AdMediator.Windows81.MicrosoftAdvertising.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll">
+    <AppxPackagedFile Include="D:\Projects\YTuber\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll">
       <PackagePath>Autofac.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Extensions.dll">
+    <AppxPackagedFile Include="D:\Projects\YTuber\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Primitives.dll">
+    <AppxPackagedFile Include="D:\Projects\YTuber\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.AdMediatorWindows81\1.0\References\CommonConfiguration\Neutral\Microsoft.Advertising.winmd">
@@ -64,77 +64,77 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.AdMediatorWindows81\1.0\Redist\CommonConfiguration\x64\UniversalXamlAdControl.Windows.dll">
       <PackagePath>UniversalXamlAdControl.Windows.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\Assets\Help\1.png">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\Assets\Help\1.png">
       <PackagePath>Assets\Help\1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\Assets\Help\2.png">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\Assets\Help\2.png">
       <PackagePath>Assets\Help\2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\Assets\Help\3.png">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\Assets\Help\3.png">
       <PackagePath>Assets\Help\3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\Assets\Help\4.png">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\Assets\Help\4.png">
       <PackagePath>Assets\Help\4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\Assets\Help\5.png">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\Assets\Help\5.png">
       <PackagePath>Assets\Help\5.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\Assets\Tiles\Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\Assets\Tiles\Logo.scale-100.png">
       <PackagePath>Assets\Tiles\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\Assets\Tiles\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\Assets\Tiles\SmallLogo.scale-100.png">
       <PackagePath>Assets\Tiles\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\Assets\Tiles\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\Assets\Tiles\SplashScreen.scale-100.png">
       <PackagePath>Assets\Tiles\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\Assets\Tiles\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\Assets\Tiles\StoreLogo.scale-100.png">
       <PackagePath>Assets\Tiles\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\YTuber.Windows.xr.xml">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\YTuber.Windows.xr.xml">
       <PackagePath>YTuber.Windows.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Controls\AdvertisementBanner.xbf">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Controls\AdvertisementBanner.xbf">
       <PackagePath>Controls\AdvertisementBanner.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Controls\ConvertNotification.xbf">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Controls\ConvertNotification.xbf">
       <PackagePath>Controls\ConvertNotification.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Controls\DownloadNotification.xbf">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Controls\DownloadNotification.xbf">
       <PackagePath>Controls\DownloadNotification.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Controls\DownloadsListView.xbf">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Controls\DownloadsListView.xbf">
       <PackagePath>Controls\DownloadsListView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Controls\HelpItem.xbf">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Controls\HelpItem.xbf">
       <PackagePath>Controls\HelpItem.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Views\About\AboutView.xbf">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Views\About\AboutView.xbf">
       <PackagePath>Views\About\AboutView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Views\Addons\AddonsView.xbf">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Views\Addons\AddonsView.xbf">
       <PackagePath>Views\Addons\AddonsView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Views\Help\HelpView.xbf">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Views\Help\HelpView.xbf">
       <PackagePath>Views\Help\HelpView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Views\Main\MainView.xbf">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Views\Main\MainView.xbf">
       <PackagePath>Views\Main\MainView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Views\Promotion\PromotionView.xbf">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\Views\Promotion\PromotionView.xbf">
       <PackagePath>Views\Promotion\PromotionView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\PlatformSpecificResources.xbf">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\PlatformSpecificResources.xbf">
       <PackagePath>PlatformSpecificResources.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Projects\YTuber\YTuber\YTuber.Windows\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>

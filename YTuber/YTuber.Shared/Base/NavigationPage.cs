@@ -27,11 +27,11 @@ namespace YTuber.Base
             _navigationManager.OnNavigatedFrom(e);
         }
 
-        private virtual void NavigationManager_LoadState(object sender, LoadStateEventArgs e)
+        public virtual void NavigationManager_LoadState(object sender, LoadStateEventArgs e)
         {
         }
 
-        private virtual void NavigationManager_SaveState(object sender, SaveStateEventArgs e)
+        public virtual void NavigationManager_SaveState(object sender, SaveStateEventArgs e)
         {
         }
     }

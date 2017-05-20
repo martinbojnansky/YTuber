@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="27920MartinBojnansk.YTuber" Publisher="CN=8806B7A2-DCFA-41C1-B10F-FC977C23274C" Version="2.0.0.2" ProcessorArchitecture="arm" />
+  <Identity Name="27920MartinBojnansk.YTuber" Publisher="CN=8806B7A2-DCFA-41C1-B10F-FC977C23274C" Version="2.0.0.3" ProcessorArchitecture="arm" />
   <mp:PhoneIdentity PhoneProductId="e721b409-aeef-4fe3-a22f-d3ab56993d39" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>YTuber</DisplayName>

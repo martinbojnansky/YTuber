@@ -1222,5 +1222,3 @@ namespace YTuber.YTuber_Windows_XamlTypeInfo
 }
 
 
-
-
