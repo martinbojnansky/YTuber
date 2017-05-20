@@ -1,0 +1,73 @@
+﻿<base:NavigationPage
+    x:Class="YTuber.Views.Promotion.PromotionView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:YTuber.Views.Promotion"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:base="using:YTuber.Base"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource BackgroundBrush}"
+          Transitions="{StaticResource EntranceTransitionCollection}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="{StaticResource CommandBarGridLength}"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="{StaticResource CommandBarGridLength}"/>
+        </Grid.RowDefinitions>
+
+        <!--Header-->
+        <Grid
+            Background="{StaticResource DarkGrayBrush}"
+            RequestedTheme="Dark">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Left side-->
+            <StackPanel 
+                Orientation="Horizontal">
+                <TextBlock
+                    Text="{Binding PromotionService.Promotion.Title}"
+                    Style="{StaticResource HeaderTextBlockStyle}"
+                    Margin="36,0"/>
+            </StackPanel>
+            
+            <!--Right side-->
+            <AppBarButton
+                Grid.Column="2"
+                Icon="Cancel"
+                Label="Cancel"
+                ToolTipService.ToolTip="Cancel"
+                Command="{Binding Navigation.GoBackCommand}"/>
+
+        </Grid>
+
+        <!--Content-->
+        <WebView
+            Grid.Row="1"
+            Source="http://bojnansky.com/apps/ytuber/ytuber.html"
+            DefaultBackgroundColor="{StaticResource BackgroundColor}"/>
+
+        <!--Commands-->
+        <Grid
+            Grid.Row="2"
+            Background="{StaticResource MediumGrayBrush}"
+            RequestedTheme="Dark">
+            <StackPanel
+                Orientation="Horizontal"
+                HorizontalAlignment="Right">
+
+                <AppBarButton 
+                    Icon="Accept" 
+                    Label="Ok"
+                    ToolTipService.ToolTip="Ok"
+                    Command="{Binding OkCommand}"/>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</base:NavigationPage>
+

@@ -1,0 +1,27 @@
+﻿<UserControl
+    x:Class="YTuber.Controls.DownloadNotification"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:YTuber.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Name="Root"
+    d:DesignHeight="25"
+    d:DesignWidth="400">
+
+    <StackPanel
+        DataContext="{Binding ElementName=Root}"
+        Visibility="{Binding IsActive, Converter={StaticResource BooleanToVisibilityConverter}}">
+        <TextBlock
+            FontSize="14"
+            Text="{Binding Label}"
+            VerticalAlignment="Center"/>
+        <ProgressBar
+            IsIndeterminate="True"
+            Foreground="{StaticResource AccentBrush}"
+            Margin="0,4,0,-6"
+            IsEnabled="{Binding IsActive}"/>
+    </StackPanel>
+</UserControl>
+

@@ -1,0 +1,61 @@
+﻿<UserControl
+    x:Class="YTuber.Controls.DownloadsListView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:YTuber.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Name="Root"
+    d:DesignHeight="600"
+    d:DesignWidth="346">
+    
+    <Grid
+        DataContext="{Binding ElementName=Root}">
+        <TextBlock
+            Text="All files have been downloaded and can be found in the Music library."
+            Margin="24"
+            FontSize="19"
+            Opacity="0.8"
+            TextWrapping="Wrap"
+            FontWeight="Light"
+            LineHeight="30"
+            Visibility="{Binding IsActive, Converter={StaticResource InverseBooleanToVisibilityConverter}}"/>
+        <ListView
+            ItemsSource="{Binding Downloads}"
+            SelectionMode="None"
+            Visibility="{Binding IsActive, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel
+                        Margin="{StaticResource ListViewItemPadding}"
+                        VerticalAlignment="Center"
+                        Grid.Column="0">
+                        <TextBlock 
+                            Text="{Binding DownloadOperation.ResultFile.Name}"
+                            TextWrapping="Wrap"
+                            FontSize="17"/>
+                        <Grid Margin="0,12,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <ProgressBar
+                                Value="{Binding Progress}"
+                                Foreground="{StaticResource AccentBrush}"
+                                Width="235" 
+                                Height="4"
+                                HorizontalAlignment="Left"/>
+                            <HyperlinkButton
+                                Grid.Column="1"
+                                HorizontalAlignment="Right"
+                                Content="Cancel"
+                                Command="{Binding CancelCommand}"/>
+                        </Grid>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</UserControl>
+

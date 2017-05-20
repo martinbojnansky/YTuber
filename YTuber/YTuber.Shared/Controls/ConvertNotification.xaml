@@ -1,0 +1,32 @@
+﻿<UserControl
+    x:Class="YTuber.Controls.ConvertNotification"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:YTuber.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Name="Root"
+    RequestedTheme="Dark">
+
+    <Grid
+        DataContext="{Binding ElementName=Root}"
+        Width="{StaticResource ConvertNotificationWidth}"
+        Background="{StaticResource MediumGrayBrush}"
+        Visibility="{Binding IsVisible, Converter={StaticResource BooleanToVisibilityConverter}}">
+        <StackPanel
+            Margin="16,18">
+            <TextBlock
+                Text="{Binding Status}"
+                TextWrapping="Wrap"
+                FontSize="17"
+                FontWeight="SemiLight"
+                Margin="0,0,0,12"/>
+            <Button
+                Content="Cancel"
+                Command="{Binding CancelCommand}"
+                HorizontalAlignment="Right"
+                Margin="0"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

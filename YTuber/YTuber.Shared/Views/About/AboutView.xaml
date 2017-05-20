@@ -1,0 +1,88 @@
+﻿<base:NavigationPage
+    x:Class="YTuber.Views.About.AboutView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:YTuber.Views.About"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:base="using:YTuber.Base"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource BackgroundBrush}"
+          Transitions="{StaticResource EntranceTransitionCollection}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="{StaticResource CommandBarGridLength}"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Header-->
+        <Grid
+            Background="{StaticResource DarkGrayBrush}"
+            RequestedTheme="Dark">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Left side-->
+            <StackPanel Orientation="Horizontal">
+                <AppBarButton
+                    Icon="Back"
+                    Label="Back"
+                    ToolTipService.ToolTip="Back"
+                    Command="{Binding Navigation.GoBackCommand}"
+                    Visibility="{StaticResource BackButtonVisibility}"
+                    Style="{StaticResource NavigationButtonStyle}"/>
+                <TextBlock
+                    Text="About"
+                    Style="{StaticResource HeaderTitleTextBlockStyle}"/>
+            </StackPanel>
+
+        </Grid>
+
+        <!--Content-->
+        <ScrollViewer 
+            Grid.Row="1"
+            Padding="{StaticResource PagePadding}">
+            <StackPanel
+                MaxWidth="{StaticResource TextPageMaxWidth}"
+                HorizontalAlignment="Left">
+                <!--Description-->
+                <StackPanel
+                    Margin="{StaticResource SectionSpacing}">
+                    <TextBlock
+                        Text="About YTuber"
+                        Style="{StaticResource AccentHeaderTextBlockStyle}"/>
+                    <TextBlock>
+                        YTuber app is changing the way how you download the music!
+                        Get any song you like in a few seconds. 
+                        Simply browse the Youtube website and click &quot;Download&quot;.
+                    </TextBlock>
+                </StackPanel>
+                <!--Terms of Use-->
+                <StackPanel
+                    Margin="{StaticResource SectionSpacing}">
+                    <TextBlock
+                        Text="Terms of Use"
+                        Style="{StaticResource AccentHeaderTextBlockStyle}"/>
+                    <TextBlock>
+                        By using this application you agree, that author of this application is not responsible for sharing any copyrighted content. No conversion or data storage is provided by this application or it's author. 
+                    </TextBlock>
+                </StackPanel>
+                
+                <!--Privacy Policy-->
+                <StackPanel
+                    Margin="{StaticResource SectionSpacing}">
+                    <TextBlock
+                        Text="Privacy Policy"
+                        Style="{StaticResource AccentHeaderTextBlockStyle}"/>
+                    <TextBlock>
+                        YTuber is not gathering any kind of personal information.
+                    </TextBlock>
+                </StackPanel>
+            </StackPanel>            
+        </ScrollViewer>
+
+    </Grid>
+</base:NavigationPage>

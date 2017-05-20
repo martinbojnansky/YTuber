@@ -1,0 +1,13 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\marti\documents\visual studio 2015\projects\ytuber\ytuber\ytuber.windowsphone\obj\x86\release\intermediatexaml\ytuber.windowsphone.exe" HashGuid="ffe7c6c9-62cf-bbd5-dd79-19e9caa692b1" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.admediator81\1.0\references\commonconfiguration\neutral\microsoft.admediator.core.dll" HashGuid="5d2543e1-177e-4eed-75c2-ba832135a8aa" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.admediator81\1.0\references\commonconfiguration\neutral\microsoft.admediator.windowsphone81.dll" HashGuid="4b6f1fb2-bc23-4a0a-dc60-f20076c5a146" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.admediator81\1.0\references\commonconfiguration\x86\microsoft.admediator.windowsphone81.microsoftadvertising.dll" HashGuid="696d18ee-c90f-a4fa-8a48-f7dcc85562b4" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.admediator81\1.0\references\commonconfiguration\neutral\microsoft.advertising.winmd" HashGuid="0e298d0e-35bc-69c1-ce53-3ec79c031e52" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="c:\users\marti\documents\visual studio 2015\projects\ytuber\packages\autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+monoandroid1+monotouch1\autofac.dll" HashGuid="1cb0ce22-b02a-b00a-4e94-c1bdda12d7f7" />
+    <ReferenceAssembly PathName="c:\users\marti\documents\visual studio 2015\projects\ytuber\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.extensions.dll" HashGuid="794366f8-cc6d-f0fa-3d07-33b45136e193" />
+    <ReferenceAssembly PathName="c:\users\marti\documents\visual studio 2015\projects\ytuber\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

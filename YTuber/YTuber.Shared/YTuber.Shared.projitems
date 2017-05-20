@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>065846ed-b4c1-43ea-ac6b-97fe01d32eaa</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>YTuber</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Base\Command.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\ModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\NavigationManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\NavigationLink.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\NavigationPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\ObservableDictionary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\SuspensionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\ViewModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\AdvertisementBanner.xaml.cs">
+      <DependentUpon>AdvertisementBanner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\ConvertNotification.xaml.cs">
+      <DependentUpon>ConvertNotification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\DownloadNotification.xaml.cs">
+      <DependentUpon>DownloadNotification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\DownloadsListView.xaml.cs">
+      <DependentUpon>DownloadsListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\HelpItem.xaml.cs">
+      <DependentUpon>HelpItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\InverseBooleanToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\InverseBooleanConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\YoutubeDownloadCancelledException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\YoutubeDownloadFreezeException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Dialogs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Json.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\LocalSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Navigation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IoC\IoCBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IoC\MVVMLocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Download\DownloadOperationObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Monetization\Promotion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Download\StorageFileDownloader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Download\YoutubeConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Download\YoutubeDownload.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Help\HelpService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Monetization\InAppPurchaseService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Monetization\InterstitialAdService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Monetization\PromotionService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\About\AboutViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Addons\AddonsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Help\HelpViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Main\MainViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Promotion\PromotionViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\About\AboutView.xaml.cs">
+      <DependentUpon>AboutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Addons\AddonsView.xaml.cs">
+      <DependentUpon>AddonsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Help\HelpView.xaml.cs">
+      <DependentUpon>HelpView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Main\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Promotion\PromotionView.xaml.cs">
+      <DependentUpon>PromotionView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Controls\AdvertisementBanner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Controls\ConvertNotification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Controls\DownloadNotification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Controls\DownloadsListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Controls\HelpItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\About\AboutView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Addons\AddonsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Help\HelpView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Main\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\Promotion\PromotionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>
