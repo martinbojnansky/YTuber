@@ -1,1 +1,0 @@
-C:\Users\marti\documents\visual studio 2015\Projects\YTuber\YTuber\YTuber.Windows\YTuber.Windows.csproj;arm
