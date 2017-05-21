@@ -1,7 +1,0 @@
-<XamlCompilerSaveState>
-  <ReferenceAssemblyList>
-    <ReferenceAssembly PathName="c:\users\marti\documents\visual studio 2015\projects\ytuber\packages\autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+monoandroid1+monotouch1\autofac.dll" HashGuid="1cb0ce22-b02a-b00a-4e94-c1bdda12d7f7" />
-    <ReferenceAssembly PathName="c:\users\marti\documents\visual studio 2015\projects\ytuber\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.extensions.dll" HashGuid="794366f8-cc6d-f0fa-3d07-33b45136e193" />
-    <ReferenceAssembly PathName="c:\users\marti\documents\visual studio 2015\projects\ytuber\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
-  </ReferenceAssemblyList>
-</XamlCompilerSaveState>
