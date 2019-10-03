@@ -13,14 +13,7 @@
     <x:Double x:Key="AppBarButtonLabelFontSize">12</x:Double>
     <Thickness x:Key="ListViewItemPadding">24,12,-24,12</Thickness>
     <Visibility x:Key="BackButtonVisibility">Visible</Visibility>
-    
-    <!--AdBannerStyle-->
-    <Style TargetType="controls:AdvertisementBanner">
-        <Setter Property="Grid.Column" Value="1"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="HorizontalAlignment" Value="Center"/>
-    </Style>
-    
+
     <!--ListViewItemStyle-->
     <Style TargetType="ListViewItem">
         <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>

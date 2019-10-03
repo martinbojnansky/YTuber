@@ -20,7 +20,6 @@ namespace YTuber.ViewModels.Main
         public YoutubeDownload YoutubeDownload { get; set; }
         public PromotionService PromotionService { get; set; }
         public HelpService HelpService { get; set; }
-        public InAppPurchaseService InAppPurchaseService { get; set; }
 
         private bool _isPageLoading;
         public bool IsPageLoading
@@ -95,7 +94,6 @@ namespace YTuber.ViewModels.Main
         }
 
         public bool IsLightDismissVisible => (IsMenuPopupVisible || IsDownloadsPopupVisible);
-        public bool IsAdvertisementFreeAddonEnabled => InAppPurchaseService.IsFeatureEnabled(InAppPurchaseService.ADVERTISEMENT_FREE);
 
         private ICommand _goBackCommand;
         public ICommand GoBackCommand => _goBackCommand ?? (_goBackCommand = new Command(GoBack));

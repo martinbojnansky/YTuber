@@ -91,7 +91,7 @@
             <!--Webviews-->
             <WebView
                 x:Name="DownloaderWebView"
-                Source="http://youtubemp3.to"
+                Source="https://ytmp3.cc/"
                 Visibility="Collapsed"/>
             <WebView
                 x:Name="YoutubeWebView"
@@ -105,10 +105,6 @@
                 IsIndeterminate="{Binding IsPageLoading}"
                 Grid.ColumnSpan="2"
                 VerticalAlignment="Top"/>
-
-            <!--Advertisement-->
-            <controls:AdvertisementBanner
-                Visibility="{Binding IsAdvertisementFreeAddonEnabled, Converter={StaticResource BooleanToVisibilityConverter}}"/>
 
             <!--Convert notification-->
             <controls:ConvertNotification
@@ -188,10 +184,6 @@
                             Symbol="Help" 
                             Title="Help"
                             PageType="help:HelpView"/>
-                        <base:NavigationLink 
-                            Symbol="Add" 
-                            Title="Addons"
-                            PageType="addons:AddonsView"/>
                         <base:NavigationLink 
                             Symbol="Document" 
                             Title="About"

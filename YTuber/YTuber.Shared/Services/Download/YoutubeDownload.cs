@@ -13,8 +13,6 @@ namespace YTuber.Services.Download
 {
     public class YoutubeDownload : YoutubeConverter
     {
-        private int _freezeCount = 0;
-
         public override async Task StartConvertingVideoAsync()
         {
             // Get url of youtube video
@@ -22,9 +20,9 @@ namespace YTuber.Services.Download
             // Wait for navigation
             await WaitForNavigationAsync();
             // Set url to convert video
-            await InvokeScriptAsync($"document.querySelector(\"input[name='videoURL']\").value = \"{videoUrl}\";", DownloaderWebView);
+            await InvokeScriptAsync($"document.querySelector(\"input[name='video']\").value = \"{videoUrl}\";", DownloaderWebView);
             // Start converting video
-            await InvokeScriptAsync($"document.querySelector(\"input[name='submitForm']\").click();", DownloaderWebView);
+            await InvokeScriptAsync($"document.querySelector(\"input[type='submit']\").click();", DownloaderWebView);
         }
 
         public async Task WaitForNavigationAsync()
@@ -51,22 +49,18 @@ namespace YTuber.Services.Download
                 CheckCancel();
 
                 // Check for completition
-                var alert = await InvokeScriptAsync("document.querySelector(\"div[role='alert']\").className;", DownloaderWebView);
+                var progress = "document.querySelector(\"#progress']\").style[\"display\"]";
+                var error = await InvokeScriptAsync("document.querySelector(\"#error']\").innerText;", DownloaderWebView);
 
-                if (alert.Contains("alert-success"))
+                if (progress != "none" || !string.IsNullOrEmpty(error))
                 {
                     isConverted = true;
                 }
                 // Check for errors
-                else if(alert.Contains("alert-danger"))
+                else
                 {
                     await HandleConversionErrorAsync();
                     return false;
-                }
-                // Handle conversion freeze
-                else
-                {
-                    await HandleConversionFreeze();
                 }
 
                 // Update status
@@ -78,47 +72,28 @@ namespace YTuber.Services.Download
 
         public override async Task UpdateStatusAsync()
         {
-            Progress = await InvokeScriptAsync("document.querySelector(\"#progress\").innerText;", DownloaderWebView);
-            Status = 
-                await InvokeScriptAsync("document.querySelector(\"div[role='alert']\").innerText;", DownloaderWebView)
-                + " " + Progress;
-        }
-
-        private async Task HandleConversionFreeze()
-        {
-            var progress = await InvokeScriptAsync("document.querySelector(\"#progress\").innerText;", DownloaderWebView);
-
-            if(progress == "0%" || progress == "100%")
-            {
-                _freezeCount++;
-            }
-            else
-            {
-                _freezeCount = 0;
-            }
-
-            if (_freezeCount == 50)
-            {
-                throw new YoutubeDownloadFreezeException();
-            }
+            //Progress = await InvokeScriptAsync("document.querySelector(\"#progress\").innerText;", DownloaderWebView);
+            Status =
+               await InvokeScriptAsync("document.querySelector(\"#progress\").innerText;", DownloaderWebView)
+               + " " + Progress;
         }
 
         private async Task HandleConversionErrorAsync()
         {
-            var error = await InvokeScriptAsync("document.querySelector(\"div[role='alert']\").innerText;", DownloaderWebView);
-            await Dialogs.ShowError(error);
+            // var error = await InvokeScriptAsync("document.querySelector(\"div[role='alert']\").innerText;", DownloaderWebView);
+            await Dialogs.ShowError("We were not able to download this video :(");
 
             return;
         }
 
         public override async Task<string> GetDownloadUrlAsync()
         {
-            return await InvokeScriptAsync("document.querySelector(\"div.completed a\").href;", DownloaderWebView);
+            return await InvokeScriptAsync("document.querySelector(\"#buttons a:first-child\").href;", DownloaderWebView);
         }
 
         public override async Task<string> GetFileNameAsync()
         {
-            var title = await InvokeScriptAsync("document.querySelector(\"div.form-container h1\").innerText;", DownloaderWebView);
+            var title = await InvokeScriptAsync("document.querySelector(\"#title\").innerText;", DownloaderWebView);
             var fileName = RemoveInvalidFileNameCharacters(title + ".mp3");
 
             return fileName;
@@ -126,7 +101,7 @@ namespace YTuber.Services.Download
 
         public override async Task NavigateToConverterAsync()
         {
-            await InvokeScriptAsync("window.location = 'http://www.youtubemp3.to';", DownloaderWebView);
+            await InvokeScriptAsync("window.location = 'https://ytmp3.cc/';", DownloaderWebView);
         }
     }
 }

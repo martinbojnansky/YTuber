@@ -14,11 +14,4 @@
     <Thickness x:Key="ListViewItemPadding">24,12,12,12</Thickness>
     <Visibility x:Key="BackButtonVisibility">Collapsed</Visibility>
 
-    <!--AdBannerStyle-->
-    <Style TargetType="controls:AdvertisementBanner">
-        <Setter Property="Grid.Row" Value="1"/>
-        <Setter Property="VerticalAlignment" Value="Bottom"/>
-        <Setter Property="HorizontalAlignment" Value="Center"/>
-    </Style>
-
 </ResourceDictionary>

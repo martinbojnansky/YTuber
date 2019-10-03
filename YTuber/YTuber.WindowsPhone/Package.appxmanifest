@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="27920MartinBojnansk.YTuber" Publisher="CN=8806B7A2-DCFA-41C1-B10F-FC977C23274C" Version="2.0.0.3" />
+  <Identity Name="27920MartinBojnansk.YTuber" Publisher="CN=8806B7A2-DCFA-41C1-B10F-FC977C23274C" Version="2.1.0.0" />
   <mp:PhoneIdentity PhoneProductId="e721b409-aeef-4fe3-a22f-d3ab56993d39" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>YTuber</DisplayName>

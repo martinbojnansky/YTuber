@@ -181,7 +181,7 @@ namespace YTuber.Services.Download
             }
             catch
             {
-                await Dialogs.ShowError("MP3 file download failed.");
+                await Dialogs.ShowError("We were not able to download this video :(");
                 await Unlock();
             }
         }

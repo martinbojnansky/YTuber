@@ -23,9 +23,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Base\ObservableDictionary.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Base\SuspensionManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Base\ViewModelBase.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Controls\AdvertisementBanner.xaml.cs">
-      <DependentUpon>AdvertisementBanner.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Controls\ConvertNotification.xaml.cs">
       <DependentUpon>ConvertNotification.xaml</DependentUpon>
     </Compile>
@@ -55,19 +52,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\Download\YoutubeConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\Download\YoutubeDownload.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\Help\HelpService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\Monetization\InAppPurchaseService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\Monetization\InterstitialAdService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\Monetization\PromotionService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\About\AboutViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Addons\AddonsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Help\HelpViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Main\MainViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Promotion\PromotionViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\About\AboutView.xaml.cs">
       <DependentUpon>AboutView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\Addons\AddonsView.xaml.cs">
-      <DependentUpon>AddonsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Help\HelpView.xaml.cs">
       <DependentUpon>HelpView.xaml</DependentUpon>
@@ -80,10 +71,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="$(MSBuildThisFileDirectory)Controls\AdvertisementBanner.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Controls\ConvertNotification.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -101,10 +88,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)Views\About\AboutView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\Addons\AddonsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
