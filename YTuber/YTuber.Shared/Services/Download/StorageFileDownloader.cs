@@ -42,7 +42,6 @@ namespace YTuber.Services.Download
 
 
         public Dialogs Dialogs { get; set; }
-        // public InterstitialAdService InterstitialAdService { get; set; }
 
         public async Task DownloadFileAsync(string url, string fileName)
         {
@@ -74,8 +73,6 @@ namespace YTuber.Services.Download
                 {
                     await downloadOperationObject.DownloadOperation.AttachAsync().AsTask(downloadOperationObject.CancellationToken.Token, progressCallback);
                 }
-
-                // InterstitialAdService.ShowAd();
             }
             catch (TaskCanceledException) { }
             catch (Exception) { }
